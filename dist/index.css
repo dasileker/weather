@@ -5,55 +5,76 @@
 }
 
 body {
+  /* background: url('./images/cloudy.gif'); */
+  background: #56CCF2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background: #085078;
-  background: -webkit-linear-gradient(to right, #085078, #85d8ce);
-  background: linear-gradient(to right, #085078, #85d8ce);
-  color: white;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
 }
 
-.location, 
+.main {
+  width: 50vh;
+  margin: 100px auto;
+  background-color: rgba(240, 248, 255, 0,6);
+  padding: 20px;
+  text-align: center
+}
+
+.main > * {
+  margin-bottom: 20px;
+}
+
+.input-box {
+  width: 100%;
+  background-color: rgba(240, 248, 255, 0.6);
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  color: #582233;
+  height: 50px;
+  border-radius: 5px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.input-box:focus {
+  background-color: rgba(255, 255, 255);
+}
+
+.weather {
+  display: none;
+  color: #582233;
+  padding: 20px;
+  line-height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0.6);
+  height: 50vh;
+}
+
+.location {
+  font-weight: bold;
+}
+
+.status {
+  padding: 20px;
+}
+
 .temperature {
-  height: 30vh;
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  font-size: 50pt;
+  font-weight: 700;
+  margin: 20px 0;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.temperature {
-  flex-direction: column;
-}
+.min-max,
+.description {
+  font-size: 12pt;
+  font-weight: 600;
+} 
 
-.degree-section {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.degree-section h2 {
-  font-size: 40px;
-}
-
-.degree-section span {
-  margin: 10px;
-  font-size: 30px;
-}
-
-.input, 
-input, button {
-  display: flex;
-}
-
-button {
-  width: 50px;
-  height: 40px;
-  color: #085078;
-  align-items: center;
-  font-size: 15px;
-  font-weight: bolder;
-}
