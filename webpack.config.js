@@ -18,12 +18,12 @@ module.exports = {
     },
     {
       test: /\.(png|svg|jpg|jpeg|gif)$/i,
-      type: 'assert/resource'
-      },
+      type: 'assert/resource',
+    },
     {
       test: /\.html$/i,
       loader: 'html-loader',
-      },
+    },
 
     ],
   },
