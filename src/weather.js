@@ -34,5 +34,3 @@ export default function showWeatherReport(weather) {
 
   document.querySelector('#icon').src = `./icons/${weatherIcon.textContent}.png`;
 }
-
-// export { showWeatherReport };
