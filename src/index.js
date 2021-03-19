@@ -40,14 +40,14 @@ function showWeatherReport(weather) {
   date.innerText = dateManage(newDate);
 
   const weatherTypes = {
-    'Clear': 'sun',
-    'Clouds': 'cloudy',
-    'Rain': 'rain',
-    'Mist': 'fog',
-    'Snow': 'snow',
-    'Thunderstorms': 'thunder',
-    'Haze': 'fog'
-  }
+    Clear: 'sun',
+    Clouds: 'cloudy',
+    Rain: 'rain',
+    Mist: 'fog',
+    Snow: 'snow',
+    Thunderstorms: 'thunder',
+    Haze: 'fog',
+  };
 
   document.body.style.backgroundImage = `url('./images/${weatherTypes[weatherType.textContent]}.gif')`;
 
