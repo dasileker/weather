@@ -10,6 +10,6 @@ const dateManage = (dateArg) => {
   const day = days[dateArg.getDay()];
 
   return `${date} ${month} (${day}), ${year}`;
-}
+};
 
-export { dateManage };
+export default dateManage;
