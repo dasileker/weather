@@ -1,10 +1,11 @@
-import { showWeatherReport } from './weather';
+import showWeatherReport from './weather';
 
 const weatherApi = {
   key: '2ac2a201f9a298fd6ce2b569bf302448',
 };
 
-
+const message = document.querySelector('#error');
+message.innerHTML = '';
 async function getReport(city) {
   try {
     const response = await fetch(
@@ -15,9 +16,7 @@ async function getReport(city) {
     const weather = result;
     showWeatherReport(weather);
   } catch (error) {
-    search.value = '';
-    search.className.add('error');
-    input.placeholder = 'Enter a valid city';
+    message.innerHTML = `this ${error}`;
   }
 }
 
