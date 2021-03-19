@@ -14,12 +14,18 @@
 <body>
   <div class="main">
     <div class="searchBox">
-      <input type="text" id="input-box" class="input-box" placeholder="Enter a City..." autocomplete="off">
+      <input type="text" id="input-box" class="input-box" placeholder="Enter a City..." autocomplete="off" onsubmit ='return validateInput()'>
     </div>
 
     <div class="weather">
       <div class="location">
-        <div class="city" id="city">Fés, MA</div><input type='checkbox' class="box">
+        <label class="toggle">
+          <input type="checkbox" id="cToggle" class="box" />
+          <span class="slider"></span>
+        </label>
+
+        <p id="error"></p>
+        <div class="city" id="city">Fés, MA</div>
         <div class="date" id="date">17 Mars (wednesday), 2021</div>
       </div>
 
