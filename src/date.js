@@ -11,5 +11,3 @@ export default function dateManage(dateArg) {
 
   return `${date} ${month} (${day}), ${year}`;
 }
-
-// export { dateManage };
