@@ -1,4 +1,5 @@
-const tempToF = (temp) => temp * (9 / 5) + 32;
+import tempToF from './temperature';
+
 const convertTemp = (weather) => {
   const currentTempF = tempToF(weather.main.temp);
 
