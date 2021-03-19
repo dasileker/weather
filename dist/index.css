@@ -76,3 +76,7 @@ body {
   font-size: 12pt;
   font-weight: 600;
 } 
+
+/* "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack serve" */
