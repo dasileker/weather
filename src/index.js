@@ -5,13 +5,11 @@ const weatherApi = {
   baseUrl: 'http://api.openweathermap.org/data/2.5/weather',
 };
 
-// display the data weather report
 function getReport(city) {
   fetch(`${weatherApi.baseUrl}?q=${city}&appid=${weatherApi.key}&units=metric`)
     .then(weather => weather.json()).then(showWeatherReport);
 }
 
-//  Event listner function
 const search = document.querySelector('#input-box');
 
 search.addEventListener('keypress', (event) => {
