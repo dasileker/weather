@@ -42,7 +42,8 @@ body {
   padding: 0 10px;
   text-align: center;
 }
-
+/* document.body.style.backgroundImage = `url('./images/${weatherTypes[wheatherType.textContent]}.gif')`; */
+/* document.querySelector('#icon').src = `./icons/${weatherIcon.textContent}.png`; */
 .input-box:focus {
   background-color: rgba(255, 255, 255);
 }
@@ -54,7 +55,7 @@ body {
   line-height: 2rem;
   border-radius: 10px;
   background-color: rgba(240, 248, 255, 0.6);
-  height: 50vh;
+  height: 55vh;
 }
 
 .location {
