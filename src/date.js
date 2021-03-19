@@ -1,5 +1,5 @@
 
-export default function dateManage(dateArg) {
+const dateManage = (dateArg) => {
   const days = ['Sunday', 'Monday', 'Thuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
   const months = ['Junuary', 'February', 'March', 'April', 'May', 'Jun', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -11,3 +11,5 @@ export default function dateManage(dateArg) {
 
   return `${date} ${month} (${day}), ${year}`;
 }
+
+export { dateManage };
