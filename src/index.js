@@ -6,6 +6,7 @@ const weatherApi = {
 
 const message = document.querySelector('#error');
 message.innerHTML = '';
+
 async function getReport(city) {
   try {
     const response = await fetch(
