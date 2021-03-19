@@ -25,6 +25,11 @@ body {
   text-align: center
 }
 
+.box {
+  padding: 20px;
+  width: 100px;
+}
+
 .main > * {
   margin-bottom: 20px;
 }
@@ -53,7 +58,7 @@ body {
   line-height: 2rem;
   border-radius: 10px;
   background-color: rgba(240, 248, 255, 0.6);
-  height: 55vh;
+  height: 60vh;
 }
 
 .location {
