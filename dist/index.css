@@ -5,10 +5,9 @@
 }
 
 body {
-  /* background: url('./images/cloudy.gif'); */
-  background: #56CCF2;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #56CCF2;
+  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+  background: linear-gradient(to right, #2F80ED, #56CCF2);
 
   height: 100vh;
   overflow: hidden;
@@ -42,8 +41,7 @@ body {
   padding: 0 10px;
   text-align: center;
 }
-/* document.body.style.backgroundImage = `url('./images/${weatherTypes[wheatherType.textContent]}.gif')`; */
-/* document.querySelector('#icon').src = `./icons/${weatherIcon.textContent}.png`; */
+
 .input-box:focus {
   background-color: rgba(255, 255, 255);
 }
@@ -78,4 +76,3 @@ body {
   font-size: 12pt;
   font-weight: 600;
 } 
-
