@@ -7,7 +7,7 @@ const weatherApi = {
 const message = document.querySelector('#error');
 message.innerHTML = '';
 
-async function getReport(city) {
+const getReport = async(city) => {
   try {
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherApi.key}&units=metric`,
