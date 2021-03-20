@@ -7,7 +7,7 @@ const convertTemp = (weather) => {
   const maxTemp = tempToF(weather.main.temp_max);
   const standarTemp = document.querySelector('#temp');
   const minMax = document.querySelector('#min-max');
-  const myToggle = document.querySelector('.box');
+  const myToggle = document.querySelector('#cToggle');
 
   myToggle.addEventListener('click', () => {
     if (myToggle.checked) {
