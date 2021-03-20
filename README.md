@@ -28,7 +28,10 @@
   - Then cd to the Folder && Open it in your Texteditor.
 
   - To Make the website fully working make sure to install the webpack
-  and run the folowing command if yoy don't have it.
+    and run the folowing command if yoy don't have it.
+  - type npm start to start the server.
+  - now you can see the page.
+
 
 
   ## Author
