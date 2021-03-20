@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #56CCF2;
+  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+  background: linear-gradient(to right, #2F80ED, #56CCF2);
+
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
+}
+
+.main {
+  width: 50vh;
+  margin: 100px auto;
+  background-color: rgba(240, 248, 255, 0,6);
+  padding: 20px;
+  text-align: center
+}
+
+.box {
+  padding: 20px;
+  width: 100px;
+}
+
+.main > * {
+  margin-bottom: 20px;
+}
+
+.input-box {
+  width: 100%;
+  background-color: rgba(240, 248, 255, 0.6);
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  color: #582233;
+  height: 50px;
+  border-radius: 5px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.input-box:focus {
+  background-color: rgba(255, 255, 255);
+}
+
+/* (A) HIDE DEFAULT CHECKBOX */
+
+.toggle input { display: none; }
+
+/* (B) TOGGLE BUTTON WRAPPER */
+
+.toggle {
+
+  position: relative;
+
+  display: inline-block;
+
+  width: 80px;
+
+  height: 30px;
+
+}
+
+/* (C) CUSTOM TOGGLE BUTTON "OUTSIDE BOX" */
+
+.slider {
+
+  /* (C1) FULLY FILL  CONTAINER */
+
+  position: absolute;
+
+  top: 0; bottom: 0;
+
+  left: 0; right: 0;
+
+  /* (C2) COSMETIC STYLES */
+
+  cursor: pointer;
+
+  border: 2px solid #b92121;
+
+  background-color: #bc2612;
+
+}
+
+/* (D) CUSTOM TOGGLE BUTTON "INSIDE SLIDER BUTTON" */
+
+.slider::before {
+
+  /* (D1) FILL UP HALF OF  CONTAINER */
+
+  content: "";
+
+  width: 50%;
+
+  height: 100%;
+
+  /* (D2) DEFAULT BUTTON POSITION - LEFT */
+
+  position: absolute;
+
+  top: 0; left: 0;
+
+  /* (D3) COSMETIC STYLES */
+
+  background-color: #eee;
+
+}
+
+/* (E) ON CHECKED (SWITCHED ON) */
+
+/* (E1) MAGIC CSS SLIDING ANIMATION */
+
+.slider, .slider::before { transition: all 0.2s; }
+
+/* (E2) TURN GREEN */
+
+.toggle input:checked + .slider {
+
+  border: 2px solid #258805;
+
+  background-color: #8cbc13;
+
+}
+
+/* (E3) MOVE SLIDER BUTTON TO RIGHT */
+
+.toggle input:checked + .slider::before { left: 50%; }
+
+.weather {
+  display: none;
+  color: #582233;
+  padding: 20px;
+  line-height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0.6);
+  height: 65vh;
+}
+
+.location {
+  font-weight: bold;
+}
+
+.status {
+  padding: 20px;
+}
+
+.temperature {
+  font-size: 50pt;
+  font-weight: 700;
+  margin: 20px 0;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.min-max,
+.description {
+  font-size: 12pt;
+  font-weight: 600;
+} 

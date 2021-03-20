@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Weather Channel</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="searchBox">
+      <input type="text" id="input-box" class="input-box" placeholder="Enter a City..." autocomplete="off">
+    </div>
+
+    <div class="weather">
+      <div class="location">
+        <label class="toggle">
+          <input type="checkbox" id="cToggle" class="box" />
+          <span class="slider"></span>
+        </label>
+
+        <p id="error"></p>
+        <div class="city" id="city">Fés, MA</div>
+        <div class="date" id="date">17 Mars (wednesday), 2021</div>
+      </div>
+
+      <div class="status">
+        <div class="temperature" id="temp">17&deg;C</div>
+        <div class="min-max" id="min-max">17&deg;C (min) / 25&deg;C (max)</div>
+        <div class="description" id="description">Clear Sky</div>
+        <div class="images"><img id="icon"></img></div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
