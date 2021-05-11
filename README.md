@@ -8,7 +8,7 @@
 
  ## Page live Demo Link
 
- [Live Demo Link!](https://raw.githack.com/dasileker/weather/feature/dist/index.html)
+ [Live Demo Link!](https://weather-jawi.netlify.app/)
 
  ## Built With
 
