@@ -27,8 +27,10 @@ const showWeatherReport = (weather) => {
     Clouds: 'cloudy',
     Rain: 'rain',
     Mist: 'fog',
+    Fog: 'fog',
     Snow: 'snow',
     Thunderstorms: 'thunder',
+    Drizzle: 'thunder',
     Haze: 'fog',
   };
 
