@@ -33,6 +33,13 @@
   - now you can see the page.
 
 
+  ## Upcoming Features
+
+  - Add 7 days weather track.
+  - Add UV level.
+  - Add sun-rise & sun-set.
+  - wind velocity and dicrection.
+
 
   ## Author
 
