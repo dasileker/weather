@@ -21,6 +21,22 @@ const getReport = async (city) => {
   }
 };
 
+const addReport = async (city) => {
+  try {
+    const response = await fetch(
+      `https://pro.openweathermap.org/data/2.5/forecast/hourly?q=${city}&appid=${weatherApi}&units=metric`,
+    );
+
+    const result = await response.json();
+    const weather = result;
+    showWeatherReport(weather);
+  } catch (error) {
+    message.innerHTML = `this ${error}`;
+  }
+};
+
+
+
 const search = document.querySelector('#input-box');
 
 search.addEventListener('keypress', (event) => {

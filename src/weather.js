@@ -34,6 +34,10 @@ const showWeatherReport = (weather) => {
     Haze: 'fog',
   };
 
+  const addWeathertherReport = (weather) => {
+    
+  }
+
   document.body.style.backgroundImage = `url('./images/${weatherTypes[weatherType.textContent]}.gif')`;
 
   document.querySelector('#icon').src = `./icons/${weatherIcon.textContent}.png`;
