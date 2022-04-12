@@ -9,7 +9,7 @@ body {
   background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
   background: linear-gradient(to right, #2F80ED, #56CCF2);
 
-  height: 100vh;
+  height: 200vh;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: top center;
@@ -18,7 +18,7 @@ body {
 }
 
 .main {
-  width: 50vh;
+  width: 100vh;
   margin: 100px auto;
   background-color: rgba(240, 248, 255, 0,6);
   padding: 20px;
@@ -45,6 +45,11 @@ body {
   border-radius: 5px;
   padding: 0 10px;
   text-align: center;
+}
+
+#sub-button{
+  width: 130px;
+  height: 30px;
 }
 
 .input-box:focus {
