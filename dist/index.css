@@ -19,7 +19,7 @@ body {
 
 .main {
   width: 100vh;
-  margin: 100px auto;
+  margin: 200px auto;
   background-color: rgba(240, 248, 255, 0,6);
   padding: 20px;
   text-align: center
@@ -65,12 +65,10 @@ body {
 .toggle {
 
   position: relative;
-
   display: inline-block;
-
-  width: 80px;
-
-  height: 30px;
+  width: 30px;
+  height: 20px;
+  border-radius: 10px;
 
 }
 
@@ -90,7 +88,7 @@ body {
 
   cursor: pointer;
 
-  border: 2px solid #b92121;
+  border: 10px solid #b92121;
 
   background-color: #bc2612;
 
@@ -130,7 +128,7 @@ body {
 
 .toggle input:checked + .slider {
 
-  border: 2px solid #258805;
+  border: 10px solid #258805;
 
   background-color: #8cbc13;
 
@@ -143,11 +141,13 @@ body {
 .weather {
   display: none;
   color: #582233;
-  padding: 20px;
+  padding: 50px;
   line-height: 2rem;
   border-radius: 10px;
   background-color: rgba(240, 248, 255, 0.6);
-  height: 65vh;
+  height: 480px;
+  width: 300px;
+  margin: 100px auto;
 }
 
 .location {
@@ -159,9 +159,9 @@ body {
 }
 
 .temperature {
-  font-size: 50pt;
+  font-size: 20pt;
   font-weight: 700;
-  margin: 20px 0;
+  margin: 10px 0;
   text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
 }
 

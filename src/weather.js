@@ -7,6 +7,14 @@ const showWeatherReport = (weather) => {
 
   const temperature = document.querySelector('#temp');
   temperature.innerHTML = `${Math.round(weather.main.temp)}&deg;C`;
+  // const temperatureColors = document.querySelector('#temp');
+
+  // if (temperatureColors <= '10°C') {
+  //   temperatureColors.style.backgroundColor = 'color: bleu';
+  // } if (temperatureColors > '10°C' || temperatureColors <= '20°C') {
+  //   temperatureColors.style.backgroundColor = 'color: yellow';
+  // }
+
 
   const minMax = document.querySelector('#min-max');
   minMax.innerHTML = `${Math.floor(weather.main.temp_min)}&deg;C (min) / ${Math.ceil(weather.main.temp_max)}&deg;C (max)`;
@@ -34,11 +42,13 @@ const showWeatherReport = (weather) => {
     Haze: 'fog',
   };
 
+
   const addWeathertherReport = (weather) => {
     
   }
 
-  document.body.style.backgroundImage = `url('./images/${weatherTypes[weatherType.textContent]}.gif')`;
+  document.querySelector('.weather').style.backgroundImage = `url('./images/${weatherTypes[weatherType.textContent]}.gif')`;
+  document.querySelector('.weather').style.backgroundSize = 'cover';
 
   document.querySelector('#icon').src = `./icons/${weatherIcon.textContent}.png`;
 };
