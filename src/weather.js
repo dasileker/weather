@@ -7,13 +7,13 @@ const showWeatherReport = (weather) => {
 
   const temperature = document.querySelector('#temp');
   temperature.innerHTML = `${Math.round(weather.main.temp)}&deg;C`;
-  // const temperatureColors = document.querySelector('#temp');
+  const temperatureColors = document.querySelector('#temp');
 
-  // if (temperatureColors <= '10°C') {
-  //   temperatureColors.style.backgroundColor = 'color: bleu';
-  // } if (temperatureColors > '10°C' || temperatureColors <= '20°C') {
-  //   temperatureColors.style.backgroundColor = 'color: yellow';
-  // }
+  if (temperatureColors <= '10°C') {
+    temperatureColors.style.backgroundColor = 'color: bleu';
+  } if (temperatureColors > '10°C' || temperatureColors <= '20°C') {
+    temperatureColors.style.backgroundColor = 'color: yellow';
+  }
 
 
   const minMax = document.querySelector('#min-max');
