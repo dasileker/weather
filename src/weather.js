@@ -47,8 +47,8 @@ const showWeatherReport = (weather) => {
     
   }
 
-  // document.querySelector('.weather').style.backgroundImage = `url('./images/${weatherTypes[weatherType.textContent]}.gif')`;
-  // document.querySelector('.weather').style.backgroundSize = 'cover';
+  document.querySelector('.weather').style.backgroundImage = `url('./images/${weatherTypes[weatherType.textContent]}.gif')`;
+  document.querySelector('.weather').style.backgroundSize = 'cover';
 
   document.querySelector('#icon').src = `./icons/${weatherIcon.textContent}.png`;
 };
