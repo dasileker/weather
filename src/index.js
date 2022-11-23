@@ -35,13 +35,12 @@ const addReport = async (city) => {
   }
 };
 
-// // add event listener to the input field
-// const btn = document.querySelector('#sub-button');
-// btn.addEventListener('click', () => {
-//   const city = document.querySelector('#input-box').value;
-//   getReport(city);
-//   document.querySelector('.weather').style.display = 'block';
-// });
+const btn = document.querySelector('#sub-button');
+btn.addEventListener('click', () => {
+  const city = document.querySelector('#input-box').value;
+  getReport(city);
+  document.querySelector('.weather').style.display = 'block';
+});
 
 
 const search = document.querySelector('#input-box');
