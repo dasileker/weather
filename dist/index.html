@@ -26,6 +26,13 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="searchBox">
+        <input type="text" id="input-box" class="input-box" placeholder="Enter a City..." autocomplete="off">
+        <div class="btn">
+          <button id="sub-button" type="submit">Search</button>
+        </div>
+      </div>
+      
       <!-- float right the ul tag -->
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
@@ -45,13 +52,14 @@
     </div>
   </div>
 </nav>
+<!-- this is the main data display -->
   <div class="main">
-    <div class="searchBox">
+    <!-- <div class="searchBox">
       <input type="text" id="input-box" class="input-box" placeholder="Enter a City..." autocomplete="off">
       <div class="btn">
         <button id="sub-button" type="submit">Search</button>
       </div>
-    </div>
+    </div> -->
 
     <div class="weather">
       <div class="location">
@@ -69,10 +77,32 @@
         <div class="temperature" id="temp">17&deg;C</div>
         <div class="min-max" id="min-max">17&deg;C (min) / 25&deg;C (max)</div>
         <div class="description" id="description">Clear Sky</div>
-        <div class="images"><img id="icon" alt="icon"></img></div>
+        <div class="images"><img id="icon" alt="icon" /></div>
       </div>
     </div>
 
+  </div>
+
+  <!-- thisis the daily hourly display -->
+
+  <div class= "second">
+    <div class="main2">
+      <div class="weather2">
+        <div class="location2">
+          <p id="error2"></p>
+          <div class="city2" id="city2">Fés, MA</div>
+          <div class="date2" id="date2">17 Mars (wednesday), 2021</div>
+        </div>
+    
+        <div class="status2">
+          <div class="temperature2" id="temp2">17&deg;C</div>
+          <div class="min-max2" id="min-max2">17&deg;C (min) / 25&deg;C (max)</div>
+          <div class="description2" id="description2">Clear Sky</div>
+          <div class="images"><img id="icon2" alt="icon"></img></div>
+        </div>
+      </div>
+    
+    </div>
   </div>
 
 

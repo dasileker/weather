@@ -19,7 +19,7 @@ body {
 
 .main {
   width: 100vh;
-  margin: 200px auto;
+  margin: 20px auto;
   background-color: rgba(240, 248, 255, 0,6);
   padding: 20px;
   text-align: center
@@ -34,8 +34,28 @@ body {
   margin-bottom: 20px;
 }
 
+.second {
+  background: #56CCF2;
+  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+  background: linear-gradient(to right, #2F80ED, #56CCF2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.main2 {
+  border: 1px solid rgb(199, 12, 12);
+  width: 300px;
+  margin: 220px auto;
+  background-color: rgba(240, 248, 255, 0,6);
+  /* padding: 50px; */
+  text-align: center
+}
+
+
 .input-box {
-  width: 100%;
+  width: 50%;
   background-color: rgba(240, 248, 255, 0.6);
   border: none;
   outline: none;
@@ -170,3 +190,37 @@ body {
   font-size: 12pt;
   font-weight: 600;
 } 
+
+.weather2 {
+  display: none;
+  color: #582233;
+  padding: 50px;
+  line-height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0.6);
+  height: 480px;
+  width: 300px;
+  margin: 100px auto;
+}
+
+.locationé2 {
+  font-weight: bold;
+}
+
+.status2 {
+  padding: 20px;
+}
+
+.temperature2 {
+  font-size: 20pt;
+  font-weight: 700;
+  margin: 10px 0;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.min-max2,
+.description2 {
+  font-size: 12pt;
+  font-weight: 600;
+}
+

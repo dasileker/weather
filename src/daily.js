@@ -1,20 +1,19 @@
-import dateManage from './date';
-import convertTemp from './togle';
+import dateManage from "./date";
 
-const showWeatherReport = (weather) => {
-  const city = document.querySelector('#city');
+const ShowDailyReport = (weather) => {
+  const city = document.querySelector('#city2');
   city.innerText = `${weather.name}, ${weather.sys.country}`;
 
-  const temperature = document.querySelector('#temp');
+  const temperature = document.querySelector('#temp2');
   temperature.innerHTML = `${Math.round(weather.main.temp)}&deg;C`;
 
-  const minMax = document.querySelector('#min-max');
+  const minMax = document.querySelector('#min-max2');
   minMax.innerHTML = `${Math.floor(weather.main.temp_min).st}&deg;C (min) / ${Math.ceil(weather.main.temp_max)}&deg;C (max)`;
 
-  const weatherType = document.querySelector('#description');
+  const weatherType = document.querySelector('#description2');
   weatherType.innerText = `${weather.weather[0].main}`;
 
-  const weatherIcon = document.querySelector('#icon');
+  const weatherIcon = document.querySelector('#icon2');
   weatherIcon.innerText = `${weather.weather[0].icon}`;
 
   const date = document.querySelector('#date');
@@ -35,10 +34,11 @@ const showWeatherReport = (weather) => {
   };
 
 
-  document.querySelector('.weather').style.backgroundImage = `url('./images/${weatherTypes[weatherType.textContent]}.gif')`;
-  document.querySelector('.weather').style.backgroundSize = 'cover';
+  document.querySelector('.weather2').style.backgroundImage = `url('./images/${weatherTypes[weatherType.textContent]}.gif')`;
+  document.querySelector('.weather2').style.backgroundSize = 'cover';
 
-  document.querySelector('#icon').src = `./icons/${weatherIcon.textContent}.png`;
-};
+  document.querySelector('#icon2').src = `./icons/${weatherIcon.textContent}.png`;
 
-export default showWeatherReport;
+}
+
+export default ShowDailyReport;
