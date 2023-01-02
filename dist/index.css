@@ -35,6 +35,7 @@ body {
 }
 
 .second {
+  border: 1px solid #fff;
   background: #56CCF2;
   background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
   background: linear-gradient(to right, #2F80ED, #56CCF2);
@@ -47,7 +48,7 @@ body {
 .main2 {
   border: 1px solid rgb(199, 12, 12);
   width: 300px;
-  margin: 220px auto;
+  height: 300px;
   background-color: rgba(240, 248, 255, 0,6);
   /* padding: 50px; */
   text-align: center

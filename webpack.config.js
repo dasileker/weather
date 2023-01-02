@@ -1,6 +1,14 @@
 module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
+  entry: {
+    first: './src/index.js',
+    second: './src/daily.js',
+    third: './src/hourly.js',
+    fourth: './src/weather.js',
+    fifth: './src/togle.js',
+    sixth: './src/date.js',
+  },
   devServer: {
     contentBase: './dist',
   },

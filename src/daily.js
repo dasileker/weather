@@ -1,22 +1,23 @@
 import dateManage from "./date";
 
+
 const ShowDailyReport = (weather) => {
   const city = document.querySelector('#city2');
-  city.innerText = `${weather.name}, ${weather.sys.country}`;
+  city.innerText = `${weather.city.name}, ${weather.sys.country}`;
 
   const temperature = document.querySelector('#temp2');
-  temperature.innerHTML = `${Math.round(weather.main.temp)}&deg;C`;
+  temperature.innerHTML = `${Math.round(weather.list.temp[0].day)}&deg;C`;
 
   const minMax = document.querySelector('#min-max2');
-  minMax.innerHTML = `${Math.floor(weather.main.temp_min).st}&deg;C (min) / ${Math.ceil(weather.main.temp_max)}&deg;C (max)`;
+  minMax.innerHTML = `${Math.floor(weather.list.temp[0].min)}&deg;C (min) / ${Math.ceil(weather.list.temp[0].max)}&deg;C (max)`;
 
   const weatherType = document.querySelector('#description2');
-  weatherType.innerText = `${weather.weather[0].main}`;
+  weatherType.innerText = `${weather.list.weather[0].main}`;
 
   const weatherIcon = document.querySelector('#icon2');
-  weatherIcon.innerText = `${weather.weather[0].icon}`;
+  weatherIcon.innerText = `${weather.list.weather[0].icon}`;
 
-  const date = document.querySelector('#date');
+  const date = document.querySelector('#date2');
   const newDate = new Date();
   date.innerText = dateManage(newDate);
   convertTemp(weather);

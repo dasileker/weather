@@ -9,7 +9,7 @@ const showWeatherReport = (weather) => {
   temperature.innerHTML = `${Math.round(weather.main.temp)}&deg;C`;
 
   const minMax = document.querySelector('#min-max');
-  minMax.innerHTML = `${Math.floor(weather.main.temp_min).st}&deg;C (min) / ${Math.ceil(weather.main.temp_max)}&deg;C (max)`;
+  minMax.innerHTML = `${Math.floor(weather.main.temp_min)}&deg;C (min) / ${Math.ceil(weather.main.temp_max)}&deg;C (max)`;
 
   const weatherType = document.querySelector('#description');
   weatherType.innerText = `${weather.weather[0].main}`;
