@@ -45,7 +45,7 @@ search.addEventListener('keypress', (event) => {
 
 // display the data in the UI function 
 
-const showDailyReport = (weather) => {
+const showHourlyReport = (weather) => {
   const city = document.querySelector('#city2');
   city.innerText = `${weather.city.name}, ${weather.sys.country}`;
 
@@ -86,4 +86,4 @@ document.querySelector('#icon2').src = `./icons/${weatherIcon.textContent}.png`;
 
 };
 
-export default showDailyReport;
+export default showHourlyReport;
