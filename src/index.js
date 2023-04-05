@@ -26,14 +26,14 @@ const getReport = async (city) => {
     // Display the current weather data and 5-day forecast
     showWeatherReport(currentWeather);
 
-    const forecastDiv = document.createElement('div');
-    forecastDiv.classList.add('forecast');
+    const forecastContainer = document.createElement('div');
+    forecastContainer.classList.add('forecast-container');
 
     for (let i = 0; i < forecastWeather.length; i += 8) {
       const dayData = forecastWeather[i];
 
-      const forecastDay = document.createElement('div');
-      forecastDay.classList.add('forecast-day');
+      const forecastCard = document.createElement('div');
+      forecastCard.classList.add('forecast-card');
 
       const forecastDate = document.createElement('div');
       forecastDate.classList.add('forecast-date');
@@ -47,12 +47,12 @@ const getReport = async (city) => {
       forecastTemp.classList.add('forecast-temp');
       forecastTemp.innerText = `${Math.round(dayData.main.temp)}°C`;
 
-      forecastDay.append(forecastDate, forecastIcon, forecastTemp);
-      forecastDiv.append(forecastDay);
+      forecastCard.append(forecastDate, forecastIcon, forecastTemp);
+      forecastContainer.append(forecastCard);
     }
 
     const weatherDiv = document.querySelector('.weather');
-    weatherDiv.parentNode.insertBefore(forecastDiv, weatherDiv.nextSibling);
+    weatherDiv.parentNode.insertBefore(forecastContainer, weatherDiv.nextSibling);
 
   } catch (error) {
     message.innerHTML = `this ${error}`;
