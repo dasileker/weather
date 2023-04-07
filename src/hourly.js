@@ -1,4 +1,4 @@
-import showDailyReport from './daily';
+// import showDailyReport from './daily';
 
 const weatherApi = {
   key: '6dedb46ebef0c664b3eab37ba3f7b970',
