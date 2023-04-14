@@ -12,9 +12,28 @@
 </head>
 
 <body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="#" class="logo">Weather Channel</a>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="navbar-right">
+        <input type="text" id="nav-search-box" class="search-box" placeholder="Search...">
+        <button id="nav-search-btn" class="search-btn">Search</button>
+      </div>
+
+    </nav>
+  </header>
+
   <div class="main">
     <div class="searchBox">
       <input type="text" id="input-box" class="input-box" placeholder="Enter a City..." autocomplete="off">
+      <button id="input-search-btn" class="input-search-btn">Search</button>
     </div>
 
     <div class="weather">
@@ -33,13 +52,30 @@
         <div class="temperature" id="temp">17&deg;C</div>
         <div class="min-max" id="min-max">17&deg;C (min) / 25&deg;C (max)</div>
         <div class="description" id="description">Clear Sky</div>
-        <div class="images"><img id="icon"></img></div>
+        <div class="images"><img id="icon" alt="image"></img></div>
       </div>
     </div>
-
+    
   </div>
-
-
+    <section class="forecast-section">
+      <div class="forecast">
+        <div class="forecast-day" id="day1">
+          <div class="forecast-card"></div>
+        </div>
+        <div class="forecast-day" id="day2">
+          <div class="forecast-card"></div>
+        </div>
+        <div class="forecast-day" id="day3">
+          <div class="forecast-card"></div>
+        </div>
+        <div class="forecast-day" id="day4">
+          <div class="forecast-card"></div>
+        </div>
+        <div class="forecast-day" id="day5">
+          <div class="forecast-card"></div>
+        </div>
+      </div>
+    </section>
 
 
   <script src="main.js"></script>
