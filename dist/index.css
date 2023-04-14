@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* 
 body {
   background: #56CCF2;
   background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
@@ -23,7 +23,133 @@ body {
   background-color: rgba(240, 248, 255, 0,6);
   padding: 20px;
   text-align: center
+} */
+
+body {
+  background: #56CCF2;
+  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+  background: linear-gradient(to right, #2F80ED, #56CCF2);
+
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
+  background-attachment: fixed; /* Add this property */
 }
+
+
+.main {
+  width: 50vh;
+  margin: 100px auto;
+  background-color: rgba(240, 248, 255, 0, 6);
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh; /* Add this property */
+}
+
+header {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-links li {
+  margin: 0 10px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.navbar-links a:hover {
+  color: #56CCF2;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #000;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-right: 20px;
+}
+
+.search-box:focus {
+  background-color: rgba(255, 255, 255);
+}
+
+.daytime {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.search-btn {
+  background-color: #56CCF2;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #fff;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 10px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.input-search-btn {
+  background-color: #3eb670;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #fff;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 10px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.search-btn:hover {
+  background-color: #2F80ED;
+}
+
 
 .box {
   padding: 20px;
@@ -72,56 +198,25 @@ body {
 /* (C) CUSTOM TOGGLE BUTTON "OUTSIDE BOX" */
 
 .slider {
-
-  /* (C1) FULLY FILL  CONTAINER */
-
   position: absolute;
-
   top: 0; bottom: 0;
-
   left: 0; right: 0;
-
-  /* (C2) COSMETIC STYLES */
-
   cursor: pointer;
-
   border: 2px solid #b92121;
-
   background-color: #bc2612;
-
 }
 
-/* (D) CUSTOM TOGGLE BUTTON "INSIDE SLIDER BUTTON" */
-
 .slider::before {
-
-  /* (D1) FILL UP HALF OF  CONTAINER */
-
   content: "";
-
   width: 50%;
-
   height: 100%;
-
-  /* (D2) DEFAULT BUTTON POSITION - LEFT */
-
   position: absolute;
-
   top: 0; left: 0;
-
-  /* (D3) COSMETIC STYLES */
-
   background-color: #eee;
 
 }
 
-/* (E) ON CHECKED (SWITCHED ON) */
-
-/* (E1) MAGIC CSS SLIDING ANIMATION */
-
 .slider, .slider::before { transition: all 0.2s; }
-
-/* (E2) TURN GREEN */
 
 .toggle input:checked + .slider {
 
@@ -130,8 +225,6 @@ body {
   background-color: #8cbc13;
 
 }
-
-/* (E3) MOVE SLIDER BUTTON TO RIGHT */
 
 .toggle input:checked + .slider::before { left: 50%; }
 
@@ -165,3 +258,77 @@ body {
   font-size: 12pt;
   font-weight: 600;
 } 
+
+.forecast-section {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin-top: 10px;
+  padding-bottom: 20px; /* Adding padding to prevent the scrollbar from overlapping the content */
+}
+
+.forecast-day {
+  flex: 0 0 auto; /* Change this to prevent the cards from stretching and to keep their width fixed */
+  margin: 0 10px;
+}
+
+
+.forecast-day {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.forecast-date,
+.forecast-temp,
+.forecast-description {
+  margin-bottom: 10px;
+}
+
+.forecast-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  /* box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2); */
+}
+
+.forecast-date {
+  font-size: 17px;
+  /* font-weight: 700; */
+  margin-bottom: 10px;
+  color: #0c0c0c;
+  /* text-shadow: 2px 4px rgba(0, 0, 0, 0.3); */
+}
+
+.forecast-temp {
+  font-size: 15pt;
+  margin-bottom: 10px;
+  color: #F1A94E;
+ /* text-shadow: 2px 4px #F1A94E; */
+}
+
+.forecast-description {
+  font-size: 15pt;
+  margin-bottom: 10px;
+  color: #E45635;
+  /* text-shadow: 2px 4px #E45635; */
+}
+
+.forecast-wind, .forecast-sunrise, .forecast-sunset {
+  font-size: 15pt;
+  margin-bottom: 10px;
+  color: #5D4C46;
+  /* text-shadow: 2px 4px #5D4C46; */
+}
+
